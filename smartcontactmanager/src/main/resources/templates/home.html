@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <title>Home page</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome to home page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nisi.</p>
+    </div>
+    <script>
+        console.log("home page");
+    </script>
+     <script>
+        console.log(" second home page");
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>This is about page</h1>
+    <hr/>
+     //using fragment
+     <div class="host-tag" th:replace="${isLogin} ? ~{base :: parent(~{::section})} : ~{base :: test(~{::#not_logged_in})}">
+        <section>
+            <h1>user is logged in </h1>
+            <h2>this is dynamic content</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est voluptates nulla aut numquam aspernatur blanditiis fuga magni nisi perferendis deleniti?</p>
+            <button>click here</button>
+            </section>
+
+            <section id="not_logged_in">
+                <h1>User is not logged in</h1>
+            </section>
+
+     </div>
+
+
+</body>
+</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="bg-gray-200 w-1/2 p-4 flex flex-col space-y-3 justify-center items-center mx-auto mt-4">
+        <h1 class="text-2xl font-bold" data-th-text="${name}">Welcome to home page</h1>
+        <p class="text-xl text-gray-700">youtube channel:<span data-th-text="${youtubeChannel}"></span></p>
+        <p>Github Repository link:<span th:text="${githubRepository}"></span></p>
+        <a data-th-href="${githubRepository}">Click here to open</a>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ducimus pariatur saepe molestiae tempore enim, eveniet doloribus eum nulla, exercitationem quae sunt odit cupiditate magni deserunt dolorem ab corrupti! Modi doloribus eum unde, odit dolores nulla maxime qui totam illum saepe ratione molestias autem dolore consectetur recusandae voluptas, voluptatem error!</p>
+    <div>
+        <button class="px-3 py-3 rounded bg-blue-700 text-white hover:bg-blue-500">Click here</button>
+    </div>
+    </div>
+    // flow bite content
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>-->

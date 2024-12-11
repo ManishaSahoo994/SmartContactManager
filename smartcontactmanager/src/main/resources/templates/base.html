@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" th:fragment="parent(content,title,script)" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-th-replace="${title}">Base Page</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+<!-- common header -->
+<div data-th-replace="navbar :: navbar">
+
+</div>
+
+    <!-- main content from about and services -->
+     <div class="p-4 mt-16">
+<section data-th-replace="${content}"></section>
+</div>
+
+    <!-- flow bite content-->
+
+<!-- common footer -->
+ <footer class="p-4">
+    Footer:Learn from documentation
+ </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <th:block data-th-replace="${script}"></th:block>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="parent-fragment" th:fragment="parent(content)">
+    <h1>This is parent fragment</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, iure!</p>
+    <div th:replace="${content}"></div>
+</div>
+
+<div th:fragment="test(content)">
+<div th:replace="${content}"></div>
+</div>-->
+
+

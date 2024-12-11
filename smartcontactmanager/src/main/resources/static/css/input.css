@@ -1,0 +1,4 @@
+/* input.css  it contains all the tailwind directives*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
